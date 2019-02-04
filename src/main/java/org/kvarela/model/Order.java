@@ -18,6 +18,8 @@ public class Order implements java.io.Serializable {
 
 	private java.lang.String email;
 
+	private java.lang.String customerName;
+
 	public Order() {
 	}
 
@@ -77,10 +79,18 @@ public class Order implements java.io.Serializable {
 		this.email = email;
 	}
 
+	public java.lang.String getCustomerName() {
+		return this.customerName;
+	}
+
+	public void setCustomerName(java.lang.String customerName) {
+		this.customerName = customerName;
+	}
+
 	public Order(java.lang.String address, java.lang.String flavor,
 			java.lang.String phone, java.lang.Double price,
 			java.lang.Integer time, java.lang.Double discount,
-			java.lang.String email) {
+			java.lang.String email, java.lang.String customerName) {
 		this.address = address;
 		this.flavor = flavor;
 		this.phone = phone;
@@ -88,6 +98,7 @@ public class Order implements java.io.Serializable {
 		this.time = time;
 		this.discount = discount;
 		this.email = email;
+		this.customerName = customerName;
 	}
 
 }
