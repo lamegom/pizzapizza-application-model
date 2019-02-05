@@ -5,7 +5,7 @@ package org.kvarela.model;
  */
 
 @javax.persistence.Entity
-@javax.persistence.Table(name = "order")
+@javax.persistence.Table(name = "pizza_order")
 public class Order implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
