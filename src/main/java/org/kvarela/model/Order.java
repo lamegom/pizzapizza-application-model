@@ -22,7 +22,9 @@ public class Order implements java.io.Serializable {
 
 	private java.lang.String customerName;
 
-    @javax.persistence.Id
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ORDER_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "ORDER_ID_GENERATOR", sequenceName = "ORDER_ID_SEQ")
 	private java.lang.Long id;
 
 	public Order() {
